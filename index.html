@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dota 2 Counter Web</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>⚔ DOTA 2 COUNTER WEB</h1>
+
+<input 
+id="search"
+placeholder="Поиск героя..."
+>
+
+
+</header>
+
+
+
+<section class="workspace">
+
+
+<div id="heroMap">
+
+</div>
+
+
+
+<aside id="panel">
+
+
+<h2 id="heroName">
+Выберите героя
+</h2>
+
+
+<div id="heroImage"></div>
+
+
+<div id="heroStats">
+
+Нажмите на героя
+
+</div>
+
+
+
+</aside>
+
+
+</section>
+
+
+
+<section class="draft">
+
+
+<h2>
+Анализ драфта
+</h2>
+
+
+<input 
+id="enemyInput"
+placeholder="Введите героя врага"
+>
+
+
+<button onclick="findCounter()">
+Найти контрпик
+</button>
+
+
+<div id="draftResult">
+
+</div>
+
+
+</section>
+
+
+
+<script src="js/database.js"></script>
+
+<script src="js/graph.js"></script>
+
+<script src="js/draft.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
